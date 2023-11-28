@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mainTitle{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 20px 0px;
+}
+.serachContainer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchBox{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchBox input{
+    width: 80%;
+    height: 100%;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.searchBox button{
+    width: 19%;
+    height: 100%;
+    cursor: pointer;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+.items-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.allitems{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+.itemCard{
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    border: 1px solid grey;
+}
+.itemCard img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.itemCard h1{
+    padding-left: 20px;
+    font-weight: 600;
+}
+.itemCard h2{
+    padding-left: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.details-container{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.details{
+    width: 500px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid black;
+}
+.details img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.details p{
+    margin-top: 10px;
+}
+.details h2{
+    margin-top: 10px;
+}
+.notfound{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.notfound p{
+    font-size: 1.3rem;
+    color: red;
+}
+
+
+@media (max-width: 1380px) {
+    .allitems{
+        width: 100%;
+    }
+}
+@media (max-width: 1250px) {
+    .allitems{
+        grid-template-columns: 1fr 1fr;
+        width: 860px;
+    }
+}
+@media (max-width: 840px) {
+    .allitems{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
